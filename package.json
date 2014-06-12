@@ -1,6 +1,6 @@
 {
   "name": "transformer-loader",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "transformer loader",
   "main": "index.js",
   "scripts": {
@@ -24,7 +24,9 @@
   "dependencies": {
     "lodash.filter": "^2.4.1",
     "lodash.isstring": "^2.4.1",
-    "lodash.uniq": "^2.4.1"
+    "lodash.uniq": "^2.4.1",
+    "npm-dir": "^0.1.0",
+    "resolve": "^0.7.1"
   },
   "devDependencies": {}
 }
