@@ -32,11 +32,11 @@ Loader.errIsModuleNotFound = function(err) {
     || err.toString().match(/Cannot find module/); //browserify
 }
 
-Loader.missingModules = function(ids) {
+Loader.missingModules = function(ids, global) {
   return unique(filter(ids, function(id) {
     try {
       // load. if no exception, it succeeded.
-      Loader(id);
+      Loader(id, global);
       return false;
     } catch (e) {
       if (Loader.errIsModuleNotFound(e))
